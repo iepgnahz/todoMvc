@@ -33,7 +33,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('mysql:mysql-connector-java:5.1.6')
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: '1.0.0.RELEASE'
+    compile('org.springframework.boot:spring-boot-starter-data-rest:1.0.0.RELEASE')
+    testCompile('io.rest-assured:spring-mock-mvc:3.0.3')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 

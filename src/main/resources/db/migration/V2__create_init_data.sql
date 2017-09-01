@@ -1,0 +1,1 @@
+INSERT INTO task (id,text,status,available) VALUES (1,"zhangpei",0,0)

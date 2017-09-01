@@ -15,24 +15,10 @@ public class Task {
     private String text;
 
     @Column(nullable = false)
-    private int completed;
+    private int status;
 
     @Column(nullable = false)
     private int available;
-
-    public Task() {
-    }
-
-    public Task(String text, int completed) {
-        this.completed = completed;
-        this.text = text;
-    }
-
-    public Task(String text, int completed, int available) {
-        this.completed = completed;
-        this.text = text;
-        this.available = available;
-    }
 
     public int getId() {
         return id;
@@ -50,12 +36,12 @@ public class Task {
         this.text = text;
     }
 
-    public int getCompleted() {
-        return completed;
+    public int getStatus() {
+        return status;
     }
 
-    public void setCompleted(int completed) {
-        this.completed = completed;
+    public void setStatus(int status) {
+        this.status = status;
     }
 
     public int getAvailable() {
@@ -70,7 +56,7 @@ public class Task {
         Map map = new HashMap();
         map.put("text", this.text);
         map.put("id", this.id);
-        map.put("completed", this.completed);
+        map.put("status", this.status);
         return map;
     }
 }

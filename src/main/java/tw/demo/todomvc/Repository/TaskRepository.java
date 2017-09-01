@@ -6,5 +6,6 @@ import tw.demo.todomvc.model.Task;
 
 @RepositoryRestResource(collectionResourceRel = "task", path = "tasks")
 public interface TaskRepository extends JpaRepository<Task, Integer> {
+
 }
 
